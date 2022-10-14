@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/martinnkemakolam.github.io/static/css/main.a66fd672.css",
+    "main.js": "/martinnkemakolam.github.io/static/js/main.1dbe0f11.js",
+    "static/media/logo.svg": "/martinnkemakolam.github.io/static/media/logo.a4a2b39fefcdb6a1a8088c4dba8f3d93.svg",
+    "index.html": "/martinnkemakolam.github.io/index.html",
+    "main.a66fd672.css.map": "/martinnkemakolam.github.io/static/css/main.a66fd672.css.map",
+    "main.1dbe0f11.js.map": "/martinnkemakolam.github.io/static/js/main.1dbe0f11.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a66fd672.css",
+    "static/js/main.1dbe0f11.js"
+  ]
+}
