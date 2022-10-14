@@ -1,0 +1,225 @@
+body{
+    margin: 0;
+    background-image:  linear-gradient( to right,hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+#Root{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+.scoreBoard_ui{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 60%;
+    height: fit-content;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 1px solid hsl(217, 16%, 45%);
+}
+.scoreBoard_ui img{
+    margin: 0 0 0 20px ;
+}
+.scoreBoardScore{
+    background-color: #fff;
+    margin:10px 20px ;
+    padding: 0 50px;
+    border-radius: 10px;
+    height: fit-content;
+}
+.scoreBoardScore p{
+    font-size: 20px;
+    font-weight: 500;
+    color: aqua;
+    margin: 10px 0 0 0;
+    color: hsl(229, 64%, 46%);
+}
+.scoreBoardScore span{
+    text-align: center;
+    display: block;
+    font-size: 60px;
+    font-weight: 500;
+    color: hsl(229, 25%, 31%);
+}
+.gameBody{
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 2fr 1fr;
+    width: fit-content;
+    justify-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.opt{
+    position: relative;
+}
+.btn{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
+button{
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.obj{
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0 2px 5px 5px rgba(0, 0, 0, 0.5) ;
+    align-items: center;
+}
+.scissor{
+    top: -10%;
+    right: 0;
+    border: 15px solid orange;
+}
+.paper{
+    top: -10%;
+    left: -5px;
+    border: 15px solid blue;
+}
+.rock{
+    bottom: 0;
+    left: 30%;
+    border: 15px solid red;
+}
+.rule{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: fit-content;
+    height: fit-content;
+    padding: 50px 25px;
+    border-radius: 20px;
+    transition: top 500ms;
+}
+.rule.active{
+    top: 1000%
+}
+.rule span{
+    font-size: 30px;
+    color: hsl(229, 25%, 31%);
+    position: absolute;
+    top: 10px;
+}
+.rule .cls{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.pick{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.yourPick, .housePick{
+    gap: 30px;
+    display: grid;
+    text-align: center;
+    width: 200px;
+    height: 150px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+.holder{
+    position: static;
+    margin: 0 auto;
+}
+.winner{
+    box-shadow: inset 0 2px 5px 5px rgba(0, 0, 0, 0.5),0 0 10px 50px rgba(255, 255, 255, 0.2) , 0 0 10px 100px rgba(255, 255, 255, 0.2), 0 0 10px 150px rgba(255, 255, 255, 0.2);
+}
+.default{
+    border: none;
+    background-color: #222;
+}
+.result{
+    display: grid;
+    width: fit-content;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+.result p{
+    font-size: 30px;
+    font-weight: 700;
+}
+.result button{
+    padding: 10px 40px;
+    background-color: #fff;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    color: hsl(214, 47%, 23%);
+}
+@media (max-width: 550px) {
+    .scoreBoard_ui{
+        width: 85%;
+        margin: 20px auto;
+    }
+}
+@media (max-width: 450px) { 
+    .scoreBoard_ui img{
+        margin: 0 0 0 5px ;
+        height: 50px;
+    }
+    .scoreBoardScore{
+        padding: 0 40px;
+    }
+    .rule{
+        width: 100vw;
+        height: 100vh;
+        padding: o;
+    }
+    .rule span{
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .rule .cls{
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%);
+        width: fit-content;
+    }
+    .svg{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%,-50%);
+    }
+    .btn{
+        bottom: 5%;
+        right: 50%;
+        transform: translate(50%);
+    }
+    .pick{
+        height: fit-content;
+        gap: 15px;
+    }
+    .result{
+        position: absolute;
+        bottom: 20%;
+    }
+    .yourPick, .housePick{
+        font-size: 20px;
+        gap: 10px;
+        width: fit-content;
+    }
+}
