@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/rockPaperScisor/static/css/main.a66fd672.css",
-    "main.js": "/rockPaperScisor/static/js/main.cfd5c91b.js",
-    "static/media/logo.svg": "/rockPaperScisor/static/media/logo.a4a2b39fefcdb6a1a8088c4dba8f3d93.svg",
-    "index.html": "/rockPaperScisor/index.html",
-    "main.a66fd672.css.map": "/rockPaperScisor/static/css/main.a66fd672.css.map",
-    "main.cfd5c91b.js.map": "/rockPaperScisor/static/js/main.cfd5c91b.js.map"
+    "main.css": "/RockPaperScissor-react/static/css/main.a66fd672.css",
+    "main.js": "/RockPaperScissor-react/static/js/main.aaaac791.js",
+    "static/media/logo.svg": "/RockPaperScissor-react/static/media/logo.a4a2b39fefcdb6a1a8088c4dba8f3d93.svg",
+    "index.html": "/RockPaperScissor-react/index.html",
+    "main.a66fd672.css.map": "/RockPaperScissor-react/static/css/main.a66fd672.css.map",
+    "main.aaaac791.js.map": "/RockPaperScissor-react/static/js/main.aaaac791.js.map"
   },
   "entrypoints": [
     "static/css/main.a66fd672.css",
-    "static/js/main.cfd5c91b.js"
+    "static/js/main.aaaac791.js"
   ]
 }
